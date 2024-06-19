@@ -18,3 +18,17 @@ searchInputEl.addEventListener("blur", () => {
   searchEl.classList.remove("focused");
   searchInputEl.setAttribute("placeholder", "");
 });
+
+new Swiper(".awards .swiper", {
+  autoplay: true,
+  loop: true,
+  spaceBetween: 30,
+  slidesPerView: 5,
+  navigator: {
+    nextEl: ".awards .swiper-button-next",
+    prevEl: ".awards .swiper-button-prev",
+  },
+});
+
+const thisYear = document.querySelector(".this-year");
+thisYear.innerHTML = new Date().getFullYear();
