@@ -46,10 +46,10 @@ toTopEl.addEventListener("click", () => {
 window.addEventListener("scroll", () => {
   console.log(window.scrollY);
   if (window.scrollY > 500) {
-    // gsap.to(badgeEl, 0.6, {
-    //   opacity: 0,
-    //   display: "none",
-    // });
+    gsap.to(badgeEl, 0.6, {
+      opacity: 0,
+      display: "none",
+    });
 
     //상단으로 이동 버튼 보이기
     gsap.to(toTopEl, 0.6, {
@@ -57,10 +57,10 @@ window.addEventListener("scroll", () => {
       x: 0,
     });
   } else {
-    // gsap.to(badgeEl, 0.6, {
-    //   opacity: 0,
-    //   display: "none",
-    // });
+    gsap.to(badgeEl, 0.6, {
+      opacity: 0,
+      display: "none",
+    });
 
     //상단으로 이동 버튼 숨기기
     gsap.to(toTopEl, 0.6, {

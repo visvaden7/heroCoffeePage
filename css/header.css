@@ -183,3 +183,16 @@ header .main-menu .item .item__contents .contents__texture p {
 }
 
 /* Badges */
+header .badges {
+  position: fixed;
+  top: 132px;
+  right: 12px;
+}
+
+header .badges .badge {
+  border-radius: 10px;
+  margin-bottom: 12px;
+  box-shadow: 4px 4px 10px rgb(0, 0, 0, 0.15);
+  cursor: pointer;
+  overflow: hidden;
+}
