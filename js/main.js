@@ -4,7 +4,6 @@ const searchInputEl = document.querySelector("input");
 
 //검색창 요소 클릭하면 실행
 searchEl.addEventListener("click", () => {
-  console.log(searchEl);
   searchInputEl.focus();
 });
 
