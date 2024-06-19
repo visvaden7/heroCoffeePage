@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <meta charset="UTF-8" />
+    <!-- <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Heropy Coffee" />
@@ -23,7 +23,8 @@
     <meta
       property="twitter:url"
       content="https://epic-darwin-271c77.netlify.app"
-    />
+    /> -->
+    <title>Heroku coffee</title>
     <link rel="icon" href="./favicon.png" />
     <link
       rel="stylesheet"
@@ -35,10 +36,39 @@
       href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/youtube.js"></script>
   </head>
   <body>
-    <div class="header"></div>
+    <header>
+      <div class="inner">
+        <!-- logo 추가 -->
+        <a href="/" class="logo">
+          <img src="./images/logo.png" alt="Heropy Coffee" />
+        </a>
+        <div class="sub-menu">
+          <ul class="menu">
+            <li><a href="./signin">Sign In</a></li>
+            <li><a href="javascript:void(0)">My Coffee</a></li>
+            <li><a href="javascript:void(0)">Customer Service & Ideas</a></li>
+            <li><a href="javascript:void(0)">Find a store</a></li>
+          </ul>
+          <div class="search">
+            <input type="text" /><span class="material-icons">search</span>
+          </div>
+        </div>
+      </div>
+    </header>
     <div class="contents"></div>
     <div class="footer"></div>
   </body>
