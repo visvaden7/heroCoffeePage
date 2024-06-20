@@ -1,0 +1,123 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: #F6F5F0;
+  border-bottom: 1px solid #c8c8c8;
+}
+
+.header .inner_header {
+  height: 120px;
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header .logo {
+  height: 75px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.contents {
+  margin-top: 120px;
+  background-image: url('../images/visual_bg.jpg');
+  background-position: center;
+  /* 임시 스크롤 효과용 */
+  height: 2000px;
+}
+
+.contents .inner_contents {
+  height: 646px;
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.badges {
+  position: absolute;
+  top: 132px;
+  right: 12px;
+}
+
+.badge {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  cursor: pointer;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, .15);
+}
+
+img {
+  display:block;
+}
+
+.inner_contents .title {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+}
+
+.inner_contents .cup1.image {
+  position: absolute;
+  bottom: 0;
+  right: -30px;
+}
+
+.inner_contents .cup1.text {
+  position: absolute;
+  top: 40px;
+  right: 60px;
+}
+
+.inner_contents .cup2.image {
+  position: absolute;
+  bottom: 0;
+  right: 162px;
+}
+
+.inner_contents .cup2.text {
+  position: absolute;
+  top: 186px;
+  right: 412px;
+}
+
+.inner_contents .spoon {
+  position: absolute;
+  bottom: 0;
+  left: 275px;
+}
+
+.inner_contents .show_seq {
+  opacity: 0;
+}
+
+.title_btn {
+  position: absolute;
+  top: 230px;
+  left: 148px;
+  color: #592B18;
+  border-color: #592B18;
+  width: 130px;
+  padding: 10px;
+  border: 2px solid #592B18;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #592B18;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  display: block;
+  transition: .4s;
+  text-decoration: solid;
+}
+
+.title_btn:hover {
+  background-color: #592B18;
+  color: #FFF;
+}
