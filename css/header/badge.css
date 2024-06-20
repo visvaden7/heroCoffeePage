@@ -3,6 +3,7 @@ header .badges {
   position: fixed;
   top: 132px;
   right: 12px;
+  z-index: 1;
 }
 
 header .badges .badge {
