@@ -1,3 +1,63 @@
+.contents {
+  background-image: url('../images/visual_bg.jpg');
+  background-repeat: no-repeat;
+}
+
+.contents .inner_contents {
+  height: 646px;
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.inner_contents .title {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+}
+
+.inner_contents .cup1.image {
+  position: absolute;
+  bottom: 0;
+  right: -30px;
+}
+
+.inner_contents .cup1.text {
+  position: absolute;
+  top: 40px;
+  right: 60px;
+}
+
+.inner_contents .cup2.image {
+  position: absolute;
+  bottom: 0;
+  right: 162px;
+}
+
+.inner_contents .cup2.text {
+  position: absolute;
+  top: 186px;
+  right: 412px;
+}
+
+.inner_contents .spoon {
+  position: absolute;
+  bottom: 0;
+  left: 275px;
+}
+
+.inner_contents .show_seq {
+  opacity: 0;
+}
+
+.inner_contents .title .btn--brown {
+  position: absolute;
+  top: 230px;
+  left: 148px;
+  border: 2px solid #592B18;
+  color: #592B18;
+}
+
 .awards {
   background-color: #272727;
 }
