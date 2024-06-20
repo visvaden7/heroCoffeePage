@@ -30,11 +30,15 @@ new Swiper(".awards .swiper", {
   },
 });
 
+//footer copyright
+
 const thisYear = document.querySelector(".this-year");
 thisYear.innerHTML = new Date().getFullYear();
 
 const badgeEl = document.querySelector("header .badges");
 const toTopEl = document.querySelector("#to-top");
+
+//footer to-top btn, header badge animation
 
 toTopEl.addEventListener("click", () => {
   console.log(0);
@@ -58,8 +62,8 @@ window.addEventListener("scroll", () => {
     });
   } else {
     gsap.to(badgeEl, 0.6, {
-      opacity: 0,
-      display: "none",
+      opacity: 1,
+      display: "block",
     });
 
     //상단으로 이동 버튼 숨기기
@@ -68,4 +72,12 @@ window.addEventListener("scroll", () => {
       x: 100,
     });
   }
+});
+
+//공지내용 slide
+
+new Swiper(".notice .swiper", {
+  direction: "vertical",
+  autoplay: true,
+  loop: true,
 });
