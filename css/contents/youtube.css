@@ -1,0 +1,172 @@
+/* 공통 요소 : inner */
+.inner {
+  position: relative;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+/* YOUTUBE */
+.youtube {
+  position: relative; /* 콘텐츠 바로 이어서 배치 */
+  height: 700px;
+  background-color: #333;
+  overflow: hidden;
+}
+.youtube-area {
+  --width: 1920px;
+  width: var(--width);
+  height: calc(var(--width) * 9 / 16);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /*
+  교재의 (중앙 정렬을 위한) 코드
+  margin-left: calc(var(--width) / -2);
+  margin-top: calc(var(--width) * 9 / 16 / -2);
+  */
+  transform: translate(-50%, -50%);
+}
+#youtube-player {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.youtube-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.3);
+}
+.youtube .inner {
+  height: 100%;
+}
+.youtube .floating1 {
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+.youtube .floating2 {
+  position: absolute;
+  top: 350px;
+  left: 150px;
+}
+
+/* SEASONAL-PRODUCT */
+.seasonal-product {
+  background-image: url("../../images/season_product_bg.jpg");
+}
+.seasonal-product .inner {
+  height: 400px;
+}
+.seasonal-product .floating3 {
+  position: absolute;
+  top: -200px;
+  right: 0;
+}
+.seasonal-product .text-group {
+  position: absolute;
+  top: 110px;
+  left: 512px; /* custom */
+  display: inline;
+}
+.seasonal-product .text-group .title {
+  margin-bottom: 10px;
+}
+.seasonal-product .text-group .description {
+  margin-bottom: 15px;
+}
+
+/* RESERVE-COFFEE */
+.reserve-coffee {
+  background-image: url("../../images/reserve_bg.jpg");
+}
+.reserve-coffee .inner {
+  height: 400px;
+}
+.reserve-coffee .reserve-logo {
+  position: absolute;
+  top: 110px;
+  left: 0;
+}
+.reserve-coffee .text-group {
+  position: absolute;
+  top: 124px;
+  left: 208px;
+}
+.reserve-coffee .product {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* PICK-YOUR-FAVORITE */
+.pick-your-favorite {
+  background-image: url("../../images/favorite_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment : fixed; /* 배경 이미지가 스크롤될 때 고정되어 parallax 효과를 줌 */
+}
+.pick-your-favorite .inner {
+  padding: 110px 0;
+}
+.pick-your-favorite .text-group {
+  width: 362px;
+  margin-left: 100px;
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+}
+.pick-your-favorite .text-group .title {
+  margin-bottom: 40px;
+}
+.pick-your-favorite .text-group .description {
+  margin-bottom: 40px;
+}
+
+/* RESERVE-STORE */
+.reserve-store {
+  background-image: url("../../images/reserve_store_bg.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.reserve-store .inner {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reserve-store .medal {
+  width: 334px;
+  height: 334px;
+}
+.reserve-store .medal .front {
+  position: absolute;
+  transition: 1s;
+}
+.reserve-store .medal .back {
+  position: absolute;
+  transition: 1s;
+  transform: rotateY(-180deg);
+  backface-visibility: hidden; /* 평소에는 안 보이게 */
+}
+/* 마우스 오버 시 돌아가는 효과 */
+.reserve-store .medal:hover .front {
+  transform: rotateY(180deg);
+}
+.reserve-store .medal:hover .back {
+  transform: rotateY(0deg);
+}
+.reserve-store .medal .back .btn {
+  position: absolute;
+  top: 240px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
