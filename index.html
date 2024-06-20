@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+s<!DOCTYPE html>
 <html lang="ko">
   <head>
-    <!-- <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Heropy Coffee" />
@@ -23,7 +23,7 @@
     <meta
       property="twitter:url"
       content="https://epic-darwin-271c77.netlify.app"
-    /> -->
+    />
     <title>Heroku coffee</title>
     <link rel="icon" href="./favicon.png" />
     <link
@@ -44,9 +44,31 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/contents.css" />
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
+    <!-- Header -->
+    <!-- css -->
+    <link rel="stylesheet" href="./css/header/header.css" />
+    <link rel="stylesheet" href="./css/header/badge.css" />
+    <!-- js -->
+    <script defer src="./js/header/header.js"></script>
+
+    <!-- contents -->
+    <!-- css -->
+    <link rel="stylesheet" href="./css/contents/notice.css" />
+    <link rel="stylesheet" href="./css/contents/promotion.css" />
+    <!-- js -->
+    <script defer src="./js/contents/youtube.js"></script>
+    <script defer src="./js/contents/notice.js"></script>
+    <script defer src="./js/contents/promotion.js"></script>
+
+    <!-- footer -->
+    <!-- css -->
+    <link rel="stylesheet" href="./css/footer/footer.css" />
+    <link rel="stylesheet" href="./css/footer/awards.css" />
+    <link rel="stylesheet" href="./css/footer/totop.css" />
+    <!-- js -->
+    <script defer src="./js/footer/awards.js"></script>
+    <script defer src="./js/footer/toTop.js"></script>
+
     <link rel="stylesheet" href="./css/main.css" />
     <link
       rel="stylesheet"
@@ -55,8 +77,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script defer src="./js/main.js"></script>
-    <script defer src="./js/youtube.js"></script>
+    <!-- <script defer src="./js/main.js"></script> -->
   </head>
   <body>
     <header>
@@ -392,6 +413,78 @@
     </header>
 
     <div class="contents">
+      <!-- Notice -->
+      <section class="notice">
+        <div class="bg-left"></div>
+        <div class="bg-right"></div>
+        <div class="inner">
+          <div class="inner__left">
+            <h2>공지사항</h2>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)"
+                    >크리스마스 & 연말연시 매장 영업시간 변경 안내</a
+                  >
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)"
+                    >[당첨자 발표] 커피 영수중 이벤트</a
+                  >
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)"
+                    >애플리케이션 버전 업데이트 안내</a
+                  >
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)"
+                    >[당첨자 발표] 전자영수중 이벤트</a
+                  >
+                </div>
+              </div>
+            </div>
+            <a href="javascript:void(0)" class="notice-more">
+              <span class="material-icons">add_circle</span>
+            </a>
+          </div>
+          <div class="inner__right"></div>
+        </div>
+      </section>
+      <!-- promotion -->
+      <!-- <section class="promotion">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/promotion_slide1.jpg" alt="" />
+              <a href="javascript:void(0)" class="btn">자세히 보기</a>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/promotion_slide2.jpg" alt="" />
+              <a href="javascript:void(0)" class="btn">자세히 보기</a>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/promotion_slide3.jpg" alt="" />
+              <a href="javascript:void(0)" class="btn">자세히 보기</a>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/promotion_slide4.jpg" alt="" />
+              <a href="javascript:void(0)" class="btn">자세히 보기</a>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/promotion_slide5.jpg" alt="" />
+              <a href="javascript:void(0)" class="btn">자세히 보기</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev">
+          <span class="material-icons">arrow_back</span>
+        </div>
+        <div class="swiper-button-next">
+          <span class="material-icons">arrow_forward</span>
+        </div>
+      </section> -->
       <!-- Awards -->
       <section class="awards">
         <div class="inner">
@@ -448,65 +541,6 @@
             </div>
             <div class="swiper-button-next">
               <span class="material-symbols-outlined"> arrow_forward </span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Notice -->
-      <section class="notice">
-        <div class="bg-left"></div>
-        <div class="bg-right"></div>
-        <div class="inner">
-          <div class="inner__left">
-            <h2>공지사항</h2>
-            <div class="swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <a href="javascript:void(0)"
-                    >크리스마스 & 연말연시 매장 영업시간 변경 안내</a
-                  >
-                </div>
-                <div class="swiper-slide">
-                  <a href="javascript:void(0)"
-                    >[당첨자 발표] 커피 영수중 이벤트</a
-                  >
-                </div>
-                <div class="swiper-slide">
-                  <a href="javascript:void(0)"
-                    >애플리케이션 버전 업데이트 안내</a
-                  >
-                </div>
-                <div class="swiper-slide">
-                  <a href="javascript:void(0)"
-                    >[당첨자 발표] 전자영수중 이벤트</a
-                  >
-                </div>
-              </div>
-            </div>
-            <a href="javascript:void(0)" class="notice-more">
-              <span class="material-icons">add_circle</span>
-            </a>
-          </div>
-          <div class="inner__right"></div>
-        </div>
-      </section>
-      <section class="promotion">
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="./images/promotion_slide1.jpg" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/promotion_slide2.jpg" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/promotion_slide3.jpg" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/promotion_slide4.jpg" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/promotion_slide5.jpg" alt="" />
             </div>
           </div>
         </div>

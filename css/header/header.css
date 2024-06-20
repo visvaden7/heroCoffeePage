@@ -127,7 +127,6 @@ header .main-menu .item:hover .item__name {
 /* item__contents */
 
 header .main-menu .item .item__contents {
-  background-color: orange;
   width: 100%;
   position: fixed;
   left: 0;
@@ -170,7 +169,7 @@ header .main-menu .item .item__contents .contents__menu > ul > li ul li:hover {
 header .main-menu .item .item__contents .contents__texture {
   padding: 26px 0;
   font-size: 12px;
-  background-image: url("../images/main_menu_pattern.jpg");
+  background-image: url("../../images/main_menu_pattern.jpg");
 }
 
 header .main-menu .item .item__contents .contents__texture h4 {
@@ -180,19 +179,4 @@ header .main-menu .item .item__contents .contents__texture h4 {
 header .main-menu .item .item__contents .contents__texture p {
   color: #ea9926;
   margin: 4px 0 14px;
-}
-
-/* Badges */
-header .badges {
-  position: fixed;
-  top: 132px;
-  right: 12px;
-}
-
-header .badges .badge {
-  border-radius: 10px;
-  margin-bottom: 12px;
-  box-shadow: 4px 4px 10px rgb(0, 0, 0, 0.15);
-  cursor: pointer;
-  overflow: hidden;
 }
