@@ -72,4 +72,25 @@
 
 .notice .inner__right {
   width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.notice .inner__right h2 {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.notice .inner__right .toggle-promotion {
+  width: 62px;
+  height: 62px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notice .inner__right .toggle-promotion .material-icons {
+  font-size: 30px;
 }

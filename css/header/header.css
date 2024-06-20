@@ -1,5 +1,10 @@
 header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9;
   background-color: #f6f5f0;
+  border-bottom: 1px solid #c8c8c8;
 }
 
 .inner {

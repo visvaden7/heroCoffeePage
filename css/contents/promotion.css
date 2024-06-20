@@ -5,6 +5,11 @@
   overflow: hidden;
   position: relative;
   height: 663px;
+  transition: height 0.4s;
+}
+
+.promotion.hide {
+  height: 0;
 }
 
 .promotion .swiper {
@@ -25,7 +30,7 @@
   opacity: 1;
 }
 
-.promotion .swiper-slides .btn {
+.promotion .swiper-slide .btn {
   position: absolute;
   bottom: 0;
   left: 0;
