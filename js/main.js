@@ -36,8 +36,8 @@
 
 // //footer copyright
 
-// const thisYear = document.querySelector(".this-year");
-// thisYear.innerHTML = new Date().getFullYear();
+const thisYear = document.querySelector(".this-year");
+thisYear.innerHTML = new Date().getFullYear();
 
 // const badgeEl = document.querySelector("header .badges");
 // const toTopEl = document.querySelector("#to-top");

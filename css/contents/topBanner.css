@@ -1,5 +1,5 @@
 .contents {
-  margin-top: 100px;
+  margin-top: 98px;
   background-image: url('../../images/visual_bg.jpg');
 }
 
@@ -16,13 +16,13 @@
   left: 10px;
 }
 
- .inner_contents .cup1.image {
+.inner_contents .cup1.image {
   position: absolute;
   bottom: 0;
   right: -30px;
 }
 
- .inner_contents .cup1.text {
+.inner_contents .cup1.text {
   position: absolute;
   top: 40px;
   right: 60px;
